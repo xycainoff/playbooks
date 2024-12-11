@@ -9,7 +9,7 @@
       community.docker.docker_container:
         name: "{{ container_name }}"
         image: "{{ image_name }}"
-        pull: "true"
+        pull: "always"
         restart_policy: "unless-stopped"
         state: "started"
         published_ports: "{{ ports }}"
